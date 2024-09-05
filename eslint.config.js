@@ -35,4 +35,20 @@ export default [
       ],
     },
   },
+  {
+    files: ['tailwind.config.js', 'webpack.config.js', '**/*.config.js'],
+    languageOptions: {
+      ecmaVersion: 2020,
+      globals: globals.node, 
+      parserOptions: {
+        sourceType: 'module',
+      },
+    },
+    env: {
+      node: true, 
+    },
+    rules: {
+      'no-undef': 'off', 
+    },
+  },
 ]
