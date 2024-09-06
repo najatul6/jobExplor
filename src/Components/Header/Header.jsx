@@ -4,6 +4,9 @@ const Header = () => {
   const links = (
     <>
       <li>
+        <Link to="/">Home</Link>
+      </li>
+      <li>
         <Link to="/statistics">Statistics</Link>
       </li>
       <li>
