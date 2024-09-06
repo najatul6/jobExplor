@@ -1,7 +1,9 @@
 
 const ErrorElement = () => {
   return (
-    <div>ErrorElement</div>
+    <div className="min-h-screen flex justify-center items-center">
+        
+    </div>
   )
 }
 
