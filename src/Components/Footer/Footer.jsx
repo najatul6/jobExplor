@@ -1,4 +1,5 @@
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -10,15 +11,15 @@ const Footer = () => {
           majority have <br /> suffered alteration in some form.
         </p>
         <div className="grid grid-flow-col gap-4">
-          <a>
-          <FaFacebookF />
-          </a>
-          <a>
-          <FaTwitter />
-          </a>
-          <a>
-          <FaInstagram />
-          </a>
+          <Link to="" className="p-3 bg-gray-400 rounded-full text-white btn">
+          <FaFacebookF  className="text-xl"/>
+          </Link>
+          <Link to="" className="p-3 bg-gray-400 rounded-full text-white btn">
+          <FaTwitter className="text-xl" />
+          </Link>
+          <Link to="" className="p-3 bg-gray-400 rounded-full text-white btn">
+          <FaInstagram className="text-xl" />
+          </Link>
         </div>
       </aside>
       <nav>
