@@ -39,7 +39,7 @@ const Header = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow space-y-5"
           >
             {links}
           </ul>
@@ -47,7 +47,7 @@ const Header = () => {
         <Link to="/" className="btn btn-ghost text-xl uppercase">Job Explore</Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">{links}</ul>
+        <ul className="menu menu-horizontal px-1 space-x-5">{links}</ul>
       </div>
       <div className="navbar-end">
         <a className="btn">Apply Job</a>
