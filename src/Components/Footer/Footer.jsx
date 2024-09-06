@@ -2,8 +2,11 @@ const Footer = () => {
   return (
     <footer className="footer bg-base-200 text-base-content p-10">
       <aside>
-       <h2></h2>
-
+        <h2 className="text-3xl uppercase font-bold">Job Explore</h2>
+        <p>
+          There are many variations of passages <br /> of Lorem Ipsum , but the
+          majority have <br /> suffered alteration in some form.
+        </p>
       </aside>
       <nav>
         <h6 className="footer-title">Services</h6>
