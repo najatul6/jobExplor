@@ -1,14 +1,16 @@
+import { Link } from "react-router-dom";
+
 const Header = () => {
   const links = (
     <>
       <li>
-        <a>Statistics</a>
+        <Link to="/statistics">Statistics</Link>
       </li>
       <li>
-        <a>Applied Jobs</a>
+        <Link to="/appliedJobs">Applied Jobs</Link>
       </li>
       <li>
-        <a>Blog</a>
+        <Link to="/blog">Blog</Link>
       </li>
     </>
   );
