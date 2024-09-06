@@ -1,4 +1,4 @@
-import { FaFacebookF, FaTwitter } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -17,7 +17,7 @@ const Footer = () => {
           <FaTwitter />
           </a>
           <a>
-            
+          <FaInstagram />
           </a>
         </div>
       </aside>
