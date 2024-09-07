@@ -52,7 +52,7 @@ const Header = () => {
         <ul className="menu menu-horizontal px-1 space-x-5">{links}</ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Apply Job</a>
+        <Link className="btn">Star Applying</Link>
       </div>
     </div>
   );
