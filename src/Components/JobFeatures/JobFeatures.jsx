@@ -1,7 +1,9 @@
+import SectionHeader from "../Shared/SectionHeader/SectionHeader"
 
 const JobFeatures = () => {
   return (
     <div>
+        <SectionHeader title={"Featured Jobs"}/>
         <h2>Featured Jobs</h2>
         <p>Explore thousands of job opportunities with all the information you need. Its your future</p>
     </div>
