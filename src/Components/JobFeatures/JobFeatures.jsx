@@ -1,7 +1,9 @@
 
 const JobFeatures = () => {
   return (
-    <div>Job Features</div>
+    <div>
+        <h2></h2>
+    </div>
   )
 }
 
