@@ -1,7 +1,10 @@
 
-const SectionHeader = () => {
+const SectionHeader = ({title,subTitle}) => {
   return (
-    <div>SectionHeader</div>
+    <div>
+        <h1>{title}</h1>
+        <p>{subTitle}</p>
+    </div>
   )
 }
 
