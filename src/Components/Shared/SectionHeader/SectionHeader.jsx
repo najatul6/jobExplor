@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 
 const SectionHeader = ({title,subTitle}) => {
   return (
@@ -6,6 +7,11 @@ const SectionHeader = ({title,subTitle}) => {
         <p className="text-xl">{subTitle}</p>
     </div>
   )
+}
+
+SectionHeader.propTypes={
+    title: PropTypes.string,
+    subTitle: PropTypes.string
 }
 
 export default SectionHeader
