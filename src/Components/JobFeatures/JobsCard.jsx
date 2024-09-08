@@ -9,14 +9,6 @@ const JobsCard = ({ job }) => {
     location,
     job_type,
     salary,
-    job_description,
-    job_responsibility,
-    educational_requirements,
-    experiences,
-    contact_information,
-    phone,
-    email,
-    address,
   } = job;
   return (
     <div className="border px-3 py-5 rounded-xl">
@@ -36,10 +28,16 @@ const JobsCard = ({ job }) => {
         </h5>
       </div>
       <div className="flex justify-start gap-5 items-center">
-        <p className="flex gap-1 justify-center items-center"><FaMapLocation/> {location}</p>
-        <p className="flex gap-1 justify-center items-center"><FaDollarSign/> {salary}</p>
+        <p className="flex gap-1 justify-center items-center">
+          <FaMapLocation /> {location}
+        </p>
+        <p className="flex gap-1 justify-center items-center">
+          <FaDollarSign /> {salary}
+        </p>
       </div>
-      <button className="btn bg-blue-600 text-white hover:bg-blue-950 outline-none border-0 text-xl capitalize">View Details</button>
+      <button className="btn bg-blue-600 text-white hover:bg-blue-950 outline-none border-0 text-xl capitalize">
+        View Details
+      </button>
     </div>
   );
 };
