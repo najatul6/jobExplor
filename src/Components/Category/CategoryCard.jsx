@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const CategoryCard = ({ category }) => {
   const { logo, category_name, availability } = category;
   return (
@@ -12,5 +14,13 @@ const CategoryCard = ({ category }) => {
     </div>
   );
 };
+
+CategoryCard.propTypes={
+    category: PropTypes.shape({
+      logo: PropTypes.string.isRequired,
+      category_name: PropTypes.string.isRequired,
+      availability: PropTypes.string.isRequired,
+    })
+}
 
 export default CategoryCard;
