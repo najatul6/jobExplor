@@ -116,7 +116,7 @@ const Blog = () => {
 
           <div className="bg-white shadow-lg rounded-lg overflow-hidden">
             <img
-              src="https://via.placeholder.com/600x400"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPWQRQ0-RG1SKMPU9GEOaLwhjnRAsW_E-Z_w&s"
               alt="Remote Jobs"
               className="w-full"
             />
