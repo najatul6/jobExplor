@@ -1,5 +1,5 @@
 import { FaDollarSign, FaMapLocation } from "react-icons/fa6";
-
+import PropTypes from "prop-types";
 const JobsCard = ({ job }) => {
   const {
     logo,
@@ -41,5 +41,8 @@ const JobsCard = ({ job }) => {
     </div>
   );
 };
+JobsCard.propTypes={
+    job: PropTypes.array,
+}
 
 export default JobsCard;
