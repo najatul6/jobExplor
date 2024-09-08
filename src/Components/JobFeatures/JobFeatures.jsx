@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import SectionHeader from "../Shared/SectionHeader/SectionHeader";
+import JobsCard from "./JobsCard";
 
 const JobFeatures = () => {
   const [jobs, setJobs] = useState([]);
@@ -18,7 +19,7 @@ const JobFeatures = () => {
       />
       <div>
         {
-          
+          jobs?.map((job) =><JobsCard key={job.id} job={job}/>)
         }
       </div>
     </div>
