@@ -1,6 +1,7 @@
 import { useState } from "react"
 import SectionHeader from "../Shared/SectionHeader/SectionHeader"
 import { useEffect } from "react"
+import CategoryCard from "./CategoryCard"
 
 const Category = () => {
   const [categories,setCategories]=useState([])
@@ -13,13 +14,8 @@ const Category = () => {
     <div>
         <SectionHeader title={"Job Category List"} subTitle={"Explore thousands of job opportunities with all the information you need. Its your future"}/>
 
-          <div className="grid grid-cols-2 gap-5 py-5">
-            {categories.map((cat)=>(
-              <div key={cat.id} className="border p-5 rounded-md shadow-md hover:shadow-2xl">
-                <h3 className="text-xl font-bold">{cat.name}</h3>
-                <p>{cat.description}</p>
-              </div>
-            ))}
+          <div className="grid grid-cols-4 gap-5 py-5">
+            {categories.map((category)=><CategoryCard key={category.id} category={category}/>)}
           </div>
     </div>
   )

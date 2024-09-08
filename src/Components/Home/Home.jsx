@@ -4,7 +4,7 @@ import JobFeatures from "../JobFeatures/JobFeatures";
 
 const Home = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center text-white">
+    <div className="text-white">
       <Banner />
       <Category />
       <JobFeatures />
