@@ -12,7 +12,7 @@ const Blog = () => {
       </header>
 
       {/* Blog Posts  */}
-      <section className="py-12">
+      <section className="py-12 px-5">
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="bg-white shadow-lg rounded-lg overflow-hidden">
             <img
