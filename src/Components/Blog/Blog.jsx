@@ -136,7 +136,7 @@ const Blog = () => {
 
           <div className="bg-white shadow-lg rounded-lg overflow-hidden">
             <img
-              src="https://via.placeholder.com/600x400"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQtpYAFlrzqesAaqQyu6sgo1RGb99uZqUk8g&s"
               alt="Job Market Trends"
               className="w-full"
             />
@@ -156,7 +156,7 @@ const Blog = () => {
 
           <div className="bg-white shadow-lg rounded-lg overflow-hidden">
             <img
-              src="https://via.placeholder.com/600x400"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUF3kYHpNfMGyGI_XeTK_CDSbgfxnKObdPJNFWQVCCvIhMYWpaNleLuB_BYjBmN3gyJJ0&usqp=CAU"
               alt="Interview Follow-up"
               className="w-full"
             />
@@ -176,7 +176,7 @@ const Blog = () => {
 
           <div className="bg-white shadow-lg rounded-lg overflow-hidden">
             <img
-              src="https://via.placeholder.com/600x400"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqXERi3UVmbega8Ku9vpB32VCJUI-suqasMg&s"
               alt="Building a Personal Brand"
               className="w-full"
             />
@@ -196,7 +196,7 @@ const Blog = () => {
 
           <div className="bg-white shadow-lg rounded-lg overflow-hidden">
             <img
-              src="https://via.placeholder.com/600x400"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWZkg_EOVxxPubE7MGM0WsYEuIYYrxj-DzPQ&s"
               alt="Cover Letter Tips"
               className="w-full"
             />
