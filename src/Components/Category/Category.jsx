@@ -14,7 +14,7 @@ const Category = () => {
     <div>
         <SectionHeader title={"Job Category List"} subTitle={"Explore thousands of job opportunities with all the information you need. Its your future"}/>
 
-          <div className="grid grid-cols-4 gap-5 py-5">
+          <div className="flex justify-center items-center gap-5 py-5">
             {categories.map((category)=><CategoryCard key={category.id} category={category}/>)}
           </div>
     </div>
