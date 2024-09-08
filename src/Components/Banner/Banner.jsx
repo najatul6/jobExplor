@@ -2,7 +2,7 @@ import bannerImg from "../../assets/man.png";
 const Banner = () => {
   return (
     <div className="grid grid-cols-2 place-items-center mx-auto py-5 w-full">
-      <div className="w-2/3 border space-y-6">
+      <div className="w-2/3 space-y-6">
         <h2 className="text-4xl font-bold capitalize">
           One Step <br /> Closer To Your <br />{" "}
           <span className="text-blue-500">Dream Job</span>
