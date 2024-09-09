@@ -11,7 +11,7 @@ const JobsCard = ({ job }) => {
     salary,
   } = job;
   return (
-    <div className="border px-3 py-5 rounded-xl flex flex-col justify-center items-start gap-6">
+    <div className="border p-5 rounded-xl flex flex-col justify-center items-start gap-6">
       <div className="w-40">
         <img src={logo} alt={company_name} className="w-full" />
       </div>
