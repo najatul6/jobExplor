@@ -21,6 +21,10 @@ const router = createBrowserRouter([
           element:<Statistics/>
         },
         {
+          path:"/jobDetails",
+          element:<Statistics/>
+        },
+        {
           path:"/appliedJobs",
           element:<AppliedJobs/>
         },
