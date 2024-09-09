@@ -22,8 +22,9 @@ const router = createBrowserRouter([
           element:<Statistics/>
         },
         {
-          path:"/jobDetails/2",
-          element:<JobDetails/>
+          path:"/jobDetails/:id",
+          element:<JobDetails/>,
+          loader:
         },
         {
           path:"/appliedJobs",
