@@ -19,16 +19,18 @@ const JobFeatures = () => {
         }
       />
       <div className="grid grid-cols-1 lg:grid-cols-2  gap-6">
-        {jobs?.slice(0, 4).map((job) => (
+        {isShow ? {jobs?.slice(0, 4).map((job) => (
           <JobsCard key={job.id} job={job} />
-        ))}
+        ))}:{jobs?.map((job) => (
+          <JobsCard key={job.id} job={job} />
+        ))}}
       </div>
       <div className="py-10 flex justify-center items-center">
         <button
           onClick={() => setIsShow(!isShow)}
           className="btn bg-blue-600 text-white hover:bg-blue-800"
         >
-          {isShow ? "Show More" : "Show Less"}
+          {isShow ? "Show Less" : "Show More"}
         </button>
       </div>
     </div>
