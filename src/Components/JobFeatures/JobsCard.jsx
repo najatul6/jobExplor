@@ -35,7 +35,7 @@ const JobsCard = ({ job }) => {
           <FaDollarSign /> {salary}
         </p>
       </div>
-      <button className="btn bg-blue-600 text-white hover:bg-blue-950 outline-none border-0 text-xl capitalize">
+      <button className="btn bg-dark-blue text-white hover:bg-blue-950 outline-none border-0 text-xl capitalize">
         View Details
       </button>
     </div>

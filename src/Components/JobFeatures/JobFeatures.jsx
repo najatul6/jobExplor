@@ -26,7 +26,7 @@ const JobFeatures = () => {
       <div className="py-10 flex justify-center items-center">
         <button
           onClick={() => setIsShow(!isShow)}
-          className="btn bg-blue-600 text-white hover:bg-blue-800 duration-300"
+          className="btn bg-dark-blue text-white hover:bg-dark-blue duration-300"
         >
           {isShow ? "Show Less" : "Show More"}
         </button>

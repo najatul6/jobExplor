@@ -2,7 +2,7 @@ const Blog = () => {
   return (
     <div className="">
       {/*  Blog Header  */}
-      <header className="bg-blue-500 py-10">
+      <header className="bg-dark-blue py-10">
         <div className="container mx-auto text-center text-white">
           <h1 className="text-4xl font-bold">Job Explore Blog</h1>
           <p className="mt-2 text-lg">
@@ -28,7 +28,7 @@ const Blog = () => {
                 Learn how to make your resume stand out with these simple but
                 effective tips.
               </p>
-              <a href="#" className="text-blue-500 hover:underline">
+              <a href="#" className="text-dark-blue hover:underline">
                 Read more
               </a>
             </div>
@@ -48,7 +48,7 @@ const Blog = () => {
                 From body language to asking the right questions, here’s how to
                 nail your next job interview.
               </p>
-              <a href="#" className="text-blue-500 hover:underline">
+              <a href="#" className="text-dark-blue hover:underline">
                 Read more
               </a>
             </div>
@@ -68,7 +68,7 @@ const Blog = () => {
                 Discover strategies to effectively network in both online and
                 offline environments.
               </p>
-              <a href="#" className="text-blue-500 hover:underline">
+              <a href="#" className="text-dark-blue hover:underline">
                 Read more
               </a>
             </div>
@@ -88,7 +88,7 @@ const Blog = () => {
                 Don’t leave money on the table! Learn how to negotiate your
                 salary with confidence.
               </p>
-              <a href="#" className="text-blue-500 hover:underline">
+              <a href="#" className="text-dark-blue hover:underline">
                 Read more
               </a>
             </div>
@@ -108,7 +108,7 @@ const Blog = () => {
                 Switching careers can be daunting, but with the right strategy,
                 you can do it!
               </p>
-              <a href="#" className="text-blue-500 hover:underline">
+              <a href="#" className="text-dark-blue hover:underline">
                 Read more
               </a>
             </div>
@@ -128,7 +128,7 @@ const Blog = () => {
                 Looking for remote work? Here are some of the best industries
                 and roles for remote jobs this year.
               </p>
-              <a href="#" className="text-blue-500 hover:underline">
+              <a href="#" className="text-dark-blue hover:underline">
                 Read more
               </a>
             </div>
@@ -148,7 +148,7 @@ const Blog = () => {
                 Stay ahead of the curve by understanding the latest trends in
                 the job market.
               </p>
-              <a href="#" className="text-blue-500 hover:underline">
+              <a href="#" className="text-dark-blue hover:underline">
                 Read more
               </a>
             </div>
@@ -168,7 +168,7 @@ const Blog = () => {
                 Make a lasting impression with these follow-up strategies after
                 your interview.
               </p>
-              <a href="#" className="text-blue-500 hover:underline">
+              <a href="#" className="text-dark-blue hover:underline">
                 Read more
               </a>
             </div>
@@ -188,7 +188,7 @@ const Blog = () => {
                 Set yourself apart by building a unique personal brand that
                 resonates with employers.
               </p>
-              <a href="#" className="text-blue-500 hover:underline">
+              <a href="#" className="text-dark-blue hover:underline">
                 Read more
               </a>
             </div>
@@ -208,7 +208,7 @@ const Blog = () => {
                 Here’s how to write a cover letter that catches the eye of
                 hiring managers.
               </p>
-              <a href="#" className="text-blue-500 hover:underline">
+              <a href="#" className="text-dark-blue hover:underline">
                 Read more
               </a>
             </div>
