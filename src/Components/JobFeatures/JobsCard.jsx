@@ -1,7 +1,9 @@
-import { FaDollarSign,FaLocationDot } from "react-icons/fa6";
+import { FaDollarSign, FaLocationDot } from "react-icons/fa6";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 const JobsCard = ({ job }) => {
   const {
+    id,
     logo,
     job_title,
     company_name,
@@ -35,14 +37,17 @@ const JobsCard = ({ job }) => {
           <FaDollarSign /> {salary}
         </p>
       </div>
-      <button className="btn bg-dark-blue text-white hover:bg-blue-950 outline-none border-0 text-xl capitalize">
-        View Details
-      </button>
+      <Link to={`/jobDetails/${id}`}>
+        <button className="btn bg-dark-blue text-white hover:bg-blue-950 outline-none border-0 text-xl capitalize">
+          View Details
+        </button>
+      </Link>
     </div>
   );
 };
 JobsCard.propTypes = {
-  job: PropTypes.array,
+  job: PropTypes.object,
+
 };
 
 export default JobsCard;
