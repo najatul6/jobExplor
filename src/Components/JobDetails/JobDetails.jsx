@@ -5,7 +5,8 @@ const JobDetails = () => {
         <h1 className="text-4xl font-bold uppercase">Job Details</h1>
       </div>
       <div className="min-h-screen flex flex-col justify-center items-center">
-        hello
+        <div className="border-2 w-full border-red-800"></div>
+        <div className="border-2 w-full border-blue-700"></div>
       </div>
     </div>
   );
