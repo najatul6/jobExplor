@@ -4,6 +4,7 @@ import JobsCard from "./JobsCard";
 
 const JobFeatures = () => {
   const [jobs, setJobs] = useState([]);
+  const [isShow, setIsShow] = useState(false);
   useEffect(() => {
     fetch("jobs.json")
       .then((res) => res.json())
@@ -23,7 +24,7 @@ const JobFeatures = () => {
         ))}
       </div>
       <div className="py-10 flex justify-center items-center">
-        <button className="btn bg-blue-600 text-white hover:bg-blue-800">Show More</button>
+        <button onClick={} className="btn bg-blue-600 text-white hover:bg-blue-800">Show More</button>
       </div>
     </div>
   );
