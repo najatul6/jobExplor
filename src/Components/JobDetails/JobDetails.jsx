@@ -8,7 +8,7 @@ const JobDetails = () => {
   const { job_title } = job;
   return (
     <div>
-      <div className="py-20 bg-blue-400 text-white flex flex-col justify-center items-center">
+      <div className="py-20 bg-base-200  text-white flex flex-col gap-4 justify-center items-center">
         <h1 className="text-4xl font-bold uppercase">Job Details</h1>
         <p>{job_title}</p>
       </div>
