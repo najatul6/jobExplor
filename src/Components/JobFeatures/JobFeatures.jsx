@@ -18,17 +18,15 @@ const JobFeatures = () => {
           "Explore thousands of job opportunities with all the information you need. Its your future"
         }
       />
-      <div className="grid grid-cols-1 lg:grid-cols-2  gap-6">
-        {isShow ? {jobs?.slice(0, 4).map((job) => (
-          <JobsCard key={job.id} job={job} />
-        ))}:{jobs?.map((job) => (
-          <JobsCard key={job.id} job={job} />
-        ))}}
+      <div className="grid grid-cols-1 lg:grid-cols-2 duration-300 gap-6">
+        {isShow
+          ? jobs?.map((job) => <JobsCard key={job.id} job={job} />)
+          : jobs?.slice(0, 4).map((job) => <JobsCard key={job.id} job={job} />)}
       </div>
       <div className="py-10 flex justify-center items-center">
         <button
           onClick={() => setIsShow(!isShow)}
-          className="btn bg-blue-600 text-white hover:bg-blue-800"
+          className="btn bg-blue-600 text-white hover:bg-blue-800 duration-300"
         >
           {isShow ? "Show Less" : "Show More"}
         </button>
