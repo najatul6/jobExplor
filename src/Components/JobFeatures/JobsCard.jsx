@@ -12,7 +12,7 @@ const JobsCard = ({ job }) => {
   } = job;
   return (
     <div className="border p-5 rounded-xl flex flex-col justify-center items-start gap-6">
-      <div className="w-40">
+      <div className="w-[100px]">
         <img src={logo} alt={company_name} className="w-full" />
       </div>
       <div>
