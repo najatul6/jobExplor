@@ -28,15 +28,21 @@ const JobDetails = () => {
       <div className="grid grid-cols-5 gap-4 items-center py-20">
         <div className="md:col-span-3 px-5 flex flex-col justify-center items-start gap-6">
           <p>
-            <span>Job Description:</span> {job_description}
+            <span className="font-bold text-lg">Job Description: </span>{" "}
+            {job_description}
           </p>
           <p>
-            <span>Job Responsibility:</span> {job_responsibility}
+            <span className="font-bold text-lg">Job Responsibility: </span>{" "}
+            {job_responsibility}
           </p>
-          <h4>Educational Requirements:</h4>
-          <p>{educational_requirements}</p>
-          <h4>Experiences:</h4>
-          <p>{experiences}</p>
+          <div>
+            <h4 className="font-bold text-lg">Educational Requirements: </h4>
+            <p>{educational_requirements}</p>
+          </div>
+          <div>
+            <h4 className="font-bold text-lg">Experiences: </h4>
+            <p>{experiences}</p>
+          </div>
         </div>
         <div className="md:col-span-2 flex flex-col justify-center items-center gap-6 px-2">
           <div className="bg-gray-700  rounded-xl w-full p-5 flex flex-col gap-6">
