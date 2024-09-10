@@ -11,6 +11,7 @@ const saveJobApplication = (id) => {
   const exits = storedJobApplications.find((jobId) => jobId === id);
   if(!exits){
     storedJobApplications.push(id)
+    localStorage.setItem('jobApplications', JSON.stringify(storedJobApplications));
   }
 };
 
