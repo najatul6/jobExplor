@@ -4,6 +4,9 @@ import { FaLocationDot } from "react-icons/fa6";
 import { HiOutlineCurrencyDollar } from "react-icons/hi2";
 import { IoMail } from "react-icons/io5";
 import { useLoaderData, useParams } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+
+import "react-toastify/dist/ReactToastify.css";
 
 const JobDetails = () => {
   const jobs = useLoaderData();
@@ -19,6 +22,9 @@ const JobDetails = () => {
     experiences,
     contact_information,
   } = job;
+  const handleApply = () => {
+    toast("Your have apply");
+  };
   return (
     <div className="text-white">
       <div className="py-20 bg-base-200  text-white flex flex-col gap-4 justify-center items-center">
@@ -86,9 +92,15 @@ const JobDetails = () => {
               </p>
             </div>
           </div>
-          <button className="btn outline-none border-none w-full bg-custom-gradient text-white hover:font-extrabold">
-            Apply Now
-          </button>
+          <div className="w-full">
+            <button
+              onClick={handleApply}
+              className="btn outline-none border-none w-full bg-custom-gradient text-white hover:font-extrabold"
+            >
+              Apply Now
+            </button>
+            <ToastContainer position="top-center" autoClose={1500} />
+          </div>
         </div>
       </div>
     </div>
