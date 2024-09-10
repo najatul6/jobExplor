@@ -6,7 +6,9 @@ const AppliedJobs = () => {
   const jobs= useLoaderData();
   useEffect(()=>{
 const storedAppliedJobs=getStoredJobApplication();
-if
+if(storedAppliedJobs>0){
+  const jobApplied=jobs.filter(job=>job.id===jobApplications)
+}
   },[])
   return (
     <div className=" text-white">
