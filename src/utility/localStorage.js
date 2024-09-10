@@ -6,6 +6,10 @@ const getStoredJobApplication = () => {
   return [];
 };
 
-const saveJobApplication = (id) => {};
+const saveJobApplication = (id) => {
+  const storedJobApplications = getStoredJobApplication();
+  const exits = storedJobApplications.find((jobId) => jobId === id);
+  if(!exits)
+};
 
-export { saveJobApplication };
+export { getStoredJobApplication, saveJobApplication };
