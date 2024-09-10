@@ -13,6 +13,7 @@ if(storedAppliedJobs>0){
   return (
     <div className=" text-white">
       Applied Jobs
+      <h2>Helo world</h2>
       </div>
   )
 }
