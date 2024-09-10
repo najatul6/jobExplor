@@ -26,7 +26,7 @@ const JobDetails = () => {
         <p>{job_title}</p>
       </div>
       <div className="grid grid-cols-5 gap-4 items-center py-20">
-        <div className="md:col-span-3 p-5">
+        <div className="md:col-span-3 px-5 flex flex-col justify-center items-start gap-6">
           <p>
             <span>Job Description:</span> {job_description}
           </p>
@@ -38,40 +38,45 @@ const JobDetails = () => {
           <h4>Experiences:</h4>
           <p>{experiences}</p>
         </div>
-        <div className="md:col-span-2 flex flex-col justify-center items-center gap-6">
-          <div className="bg-gray-700 p-5 rounded-xl ">
-            <div>
-              <div>
+        <div className="md:col-span-2 flex flex-col justify-center items-center gap-6 px-2">
+          <div className="bg-gray-700  rounded-xl w-full p-5 flex flex-col gap-6">
+            <div className="flex flex-col justify-center items-start gap-2">
+              <div className="w-full">
                 <h2 className="text-xl font-bold capitalize">Job Details</h2>
                 <hr />
               </div>
               <p className="flex gap-2 justify-start items-center">
-                <HiOutlineCurrencyDollar />
-                <span className="font-bold ">Salary :</span>
+                <HiOutlineCurrencyDollar className="font-bold text-xl text-dark-blue" />
+                <span className="font-bold">Salary :</span>
                 {salary}
               </p>
               <p className="flex gap-2 justify-start items-center">
-                <BsPersonWorkspace />
-                <span>Job Title :</span>
+                <BsPersonWorkspace className="font-bold text-xl text-dark-blue" />
+                <span className="font-bold">Job Title :</span>
                 {job_title}
               </p>
             </div>
-            <div>
-              <h2 className="text-xl font-bold capitalize">Contact Information</h2>
-              <hr />
+            <div className="flex flex-col justify-center items-start gap-2">
+              <div className="w-full">
+                <h2 className="text-xl font-bold capitalize">
+                  Contact Information
+                </h2>
+                <hr />
+              </div>
               <p className="flex gap-2 justify-start items-center">
-                <FaPhoneAlt />
-                <span>Phone : </span>
+                <FaPhoneAlt className="font-bold text-xl text-dark-blue" />
+                <span className="font-bold">Phone : </span>
                 {contact_information.phone}
               </p>
               <p className="flex gap-2 justify-start items-center">
-                <IoMail />
-                <span>Email : </span>
+                <IoMail className="font-bold text-xl text-dark-blue" />
+                <span className="font-bold">Email : </span>
                 {contact_information.email}
               </p>
-              <p className="flex text-wrap justify-start items-center text-base">
-                <FaLocationDot />
-                <span>Address :</span> {contact_information.address}
+              <p className="flex gap-2 justify-start items-center">
+                <FaLocationDot className="font-bold text-xl text-dark-blue" />
+                <span className="font-bold">Address : </span>{" "}
+                {contact_information.address}
               </p>
             </div>
           </div>
