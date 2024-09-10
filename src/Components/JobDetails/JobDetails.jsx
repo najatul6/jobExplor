@@ -20,13 +20,13 @@ const JobDetails = () => {
     contact_information,
   } = job;
   return (
-    <div>
+    <div className="text-white">
       <div className="py-20 bg-base-200  text-white flex flex-col gap-4 justify-center items-center">
         <h1 className="text-4xl font-bold uppercase">Job Details</h1>
         <p>{job_title}</p>
       </div>
-      <div className="flex flex-col md:flex-row justify-center gap-5 items-center py-20 px-5">
-        <div className="w-2/3 p-5">
+      <div className="grid grid-cols-5 gap-4 items-center py-20">
+        <div className="md:col-span-3 p-5">
           <p>
             <span>Job Description:</span> {job_description}
           </p>
@@ -38,39 +38,40 @@ const JobDetails = () => {
           <h4>Experiences:</h4>
           <p>{experiences}</p>
         </div>
-        <div className="w-1/3 flex flex-col justify-center items-center gap-6">
-          <div className="bg-gray-700 p-5 rounded-xl">
+        <div className="md:col-span-2 flex flex-col justify-center items-center gap-6">
+          <div className="bg-gray-700 p-5 rounded-xl ">
             <div>
-              <h2>Job Details</h2>
-              <hr />
-              <p>
+              <div>
+                <h2 className="text-xl font-bold capitalize">Job Details</h2>
+                <hr />
+              </div>
+              <p className="flex gap-2 justify-start items-center">
                 <HiOutlineCurrencyDollar />
-                <span>Salary :</span>
+                <span className="font-bold ">Salary :</span>
                 {salary}
               </p>
-              <p>
+              <p className="flex gap-2 justify-start items-center">
                 <BsPersonWorkspace />
                 <span>Job Title :</span>
                 {job_title}
               </p>
             </div>
             <div>
-              <h2>Contact Information</h2>
+              <h2 className="text-xl font-bold capitalize">Contact Information</h2>
               <hr />
-              <p>
+              <p className="flex gap-2 justify-start items-center">
                 <FaPhoneAlt />
                 <span>Phone : </span>
                 {contact_information.phone}
               </p>
-              <p>
+              <p className="flex gap-2 justify-start items-center">
                 <IoMail />
                 <span>Email : </span>
                 {contact_information.email}
               </p>
-              <p>
+              <p className="flex text-wrap justify-start items-center text-base">
                 <FaLocationDot />
-                <span>Address : </span>
-                {contact_information.address}
+                <span>Address :</span> {contact_information.address}
               </p>
             </div>
           </div>
