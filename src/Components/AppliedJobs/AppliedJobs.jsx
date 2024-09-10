@@ -1,9 +1,10 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom"
 import { getStoredJobApplication } from "../../utility/localStorage";
 
 const AppliedJobs = () => {
   const jobs= useLoaderData();
+  const [filterdJob,setFilterdJob]=useState()
   useEffect(()=>{
 const storedAppliedJobs=getStoredJobApplication();
 if(storedAppliedJobs>0){
