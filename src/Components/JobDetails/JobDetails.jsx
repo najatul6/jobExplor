@@ -12,18 +12,12 @@ const JobDetails = () => {
   const job = jobs.find((job) => job.id === idInt);
   const {
     job_title,
-    company_name,
-    remote_or_onsite,
-    location,
-    job_type,
     salary,
     job_description,
     job_responsibility,
     educational_requirements,
     experiences,
-    phone,
-    email,
-    address,
+    contact_information,
   } = job;
   return (
     <div>
@@ -31,8 +25,8 @@ const JobDetails = () => {
         <h1 className="text-4xl font-bold uppercase">Job Details</h1>
         <p>{job_title}</p>
       </div>
-      <div className="min-h-screen flex flex-col md:flex-row justify-center gap-5 items-center py-5 px-5">
-        <div className="border-2 w-2/3 h-screen border-red-800">
+      <div className="flex flex-col md:flex-row justify-center gap-5 items-center py-20 px-5">
+        <div className="w-2/3 p-5">
           <p>
             <span>Job Description:</span> {job_description}
           </p>
@@ -44,40 +38,45 @@ const JobDetails = () => {
           <h4>Experiences:</h4>
           <p>{experiences}</p>
         </div>
-        <div className="border-2 w-1/3 h-screen border-blue-700">
-          <div>
-            <h2>Job Details</h2>
-            <hr />
-            <p>
-              <HiOutlineCurrencyDollar />
-              <span>Salary :</span>
-              {salary}
-            </p>
-            <p>
-              <BsPersonWorkspace />
-              <span>Job Title :</span>
-              {job_title}
-            </p>
+        <div className="w-1/3 flex flex-col justify-center items-center gap-6">
+          <div className="bg-gray-700 p-5 rounded-xl">
+            <div>
+              <h2>Job Details</h2>
+              <hr />
+              <p>
+                <HiOutlineCurrencyDollar />
+                <span>Salary :</span>
+                {salary}
+              </p>
+              <p>
+                <BsPersonWorkspace />
+                <span>Job Title :</span>
+                {job_title}
+              </p>
+            </div>
+            <div>
+              <h2>Contact Information</h2>
+              <hr />
+              <p>
+                <FaPhoneAlt />
+                <span>Phone : </span>
+                {contact_information.phone}
+              </p>
+              <p>
+                <IoMail />
+                <span>Email : </span>
+                {contact_information.email}
+              </p>
+              <p>
+                <FaLocationDot />
+                <span>Address : </span>
+                {contact_information.address}
+              </p>
+            </div>
           </div>
-          <div>
-            <h2>Contact Information</h2>
-            <hr />
-            <p>
-              <FaPhoneAlt />
-              <span>Phone : </span>
-              {phone}
-            </p>
-            <p>
-              <IoMail />
-              <span>Email : </span>
-              {email}
-            </p>
-            <p>
-              <FaLocationDot />
-              <span>Address : </span>
-              {address}
-            </p>
-          </div>
+          <button className="btn outline-none border-none w-full bg-custom-gradient text-white hover:font-extrabold">
+            Apply Now
+          </button>
         </div>
       </div>
     </div>

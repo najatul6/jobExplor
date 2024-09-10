@@ -8,7 +8,10 @@ export default {
     extend: {
       colors:{
         "dark-blue":"#7E90FE",
-      }
+      },
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(to right, #7E90FE, #9873FF)',
+      },
     },
   },
   plugins: [
