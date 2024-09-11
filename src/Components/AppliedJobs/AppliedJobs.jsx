@@ -11,13 +11,16 @@ const AppliedJobs = () => {
       const jobApplied = jobs.filter((job) =>
         storedAppliedJobs.includes(job.id)
       );
-      setAppliedJobs(jobApplied)
+      setAppliedJobs(jobApplied);
     }
   }, [jobs]);
   return (
     <div className=" text-white">
-      Applied Jobs : {appliedJobs?.length}
-      <h2>Hello world</h2>
+      <div className="py-20 bg-base-200  text-white flex flex-col gap-4 justify-center items-center">
+        <h1 className="text-4xl font-bold uppercase">
+          Applied Jobs : {appliedJobs?.length}
+        </h1>
+      </div>
     </div>
   );
 };
