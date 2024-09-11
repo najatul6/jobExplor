@@ -40,7 +40,7 @@ const AppliedJobs = () => {
       </div>
       <div className="py-5">
         <div className="flex justify-end">
-          <details className="dropdown">
+          <details className="dropdown dropdown-end">
             <summary className="btn m-1">Filter By <MdArrowDropDown /></summary>
             <ul className="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
               <li>
