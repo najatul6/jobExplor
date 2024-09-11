@@ -14,7 +14,8 @@ const AppliedJobs = () => {
     if(filter === 'all'){
       setDisplayJobs(appliedJobs);
     }else if(filter === 'remote'){
-      
+      const remoteJobs = appliedJobs.filter(job=>job.remote_or_onsite==='Remote')
+      setDisplayJobs(remoteJobs);
     }
   }
   useEffect(() => {
