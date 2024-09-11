@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import { getStoredJobApplication } from "../../utility/localStorage";
 import { FaLocationDot } from "react-icons/fa6";
 import { LuCircleDollarSign } from "react-icons/lu";
@@ -24,22 +24,34 @@ const AppliedJobs = () => {
         </h1>
       </div>
       {appliedJobs.length > 0 ? (
-        <div className="grid grid-cols-3 gap-4 py-20">
+        <div className="grid grid-cols-1 gap-4 py-20">
           {appliedJobs.map((job) => (
-            <div key={job.id} className="border-2 border-gray-400 p-4">
-              <div>
-                <img src={job.logo} alt={job.job_title} />
+            <div
+              key={job.id}
+              className="border-2 border-gray-400 p-4 rounded-xl flex justify-between items-center"
+            >
+              <div className="flex justify-center items-center gap-10">
+                <div className="bg-gray-600 flex justify-center items-center p-10 rounded-xl">
+                  <img src={job.logo} alt={job.job_title} />
+                </div>
+                <div>
+                  <h2 className="text-xl font-bold">{job.job_title}</h2>
+                  <p className="text-lg">{job.company_name}</p>
+                  <div className="flex justify-start items-center gap-4">
+                    <p className="flex justify-center items-center gap-2">
+                      <FaLocationDot /> {job.location}
+                    </p>
+                    <p className="flex justify-center items-center gap-2">
+                      <LuCircleDollarSign /> {job.salary}
+                    </p>
+                  </div>
+                </div>
               </div>
-              <h2>{job.job_title}</h2>
-              <p>{job.company_name}</p>
-              <div>
-                <p>
-                  <FaLocationDot /> {job.location}
-                </p>
-                <p>
-                  <LuCircleDollarSign /> {job.salary}
-                </p>
-              </div>
+              <Link to={`/jobDetails/${job.id}`}>
+                <button className="btn bg-dark-blue text-white hover:bg-blue-950 outline-none border-0 text-xl capitalize">
+                  View Details
+                </button>
+              </Link>
             </div>
           ))}
         </div>
