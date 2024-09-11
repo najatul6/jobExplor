@@ -17,10 +17,21 @@ const AppliedJobs = () => {
   return (
     <div className=" text-white">
       <div className="py-20 bg-base-200  text-white flex flex-col gap-4 justify-center items-center">
-        <h1 className="text-4xl font-bold uppercase">
+        <h1 className="text-4xl font-bold capitalize">
           Applied Jobs : {appliedJobs?.length}
         </h1>
       </div>
+      {appliedJobs.length > 0 ? (
+        <div className="grid grid-cols-3 gap-4 py-20">
+          {appliedJobs.map((job) => (
+            <div key={job.id} className="border-2 border-gray-400 p-4">
+              <h2>{job.job_title}</h2>
+              <p>{job.company_name}</p>
+              <p>{job.location}</p>
+            </div>
+          ))}
+        </div>):<div></div>}
+
     </div>
   );
 };
