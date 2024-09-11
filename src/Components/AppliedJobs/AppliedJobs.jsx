@@ -28,13 +28,13 @@ const AppliedJobs = () => {
           {appliedJobs.map((job) => (
             <div
               key={job.id}
-              className="border-2 border-gray-400 p-4 rounded-xl flex justify-between items-center"
+              className="border-2 border-gray-400 px-4 py-5 rounded-xl flex justify-between items-center"
             >
               <div className="flex justify-center items-center gap-10">
                 <div className="bg-gray-600 flex justify-center items-center p-10 rounded-xl">
                   <img src={job.logo} alt={job.job_title} />
                 </div>
-                <div>
+                <div className="flex flex-col justify-center items-start gap-4">
                   <h2 className="text-xl font-bold">{job.job_title}</h2>
                   <p className="text-lg">{job.company_name}</p>
                   <div className="flex justify-start items-center gap-4">
