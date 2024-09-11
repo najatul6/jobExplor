@@ -4,17 +4,16 @@ import { getStoredJobApplication } from "../../utility/localStorage";
 
 const AppliedJobs = () => {
   const jobs = useLoaderData();
-  // const [filterdJob, setFilterdJob] = useState();
+  const [appliedJobs, setAppliedJobs] = useState([]);
   useEffect(() => {
     const storedAppliedJobs = getStoredJobApplication();
     if (jobs.length > 0) {
       const jobApplied = jobs.filter((job) =>
         storedAppliedJobs.includes(job.id)
       );
-
-      console.log(jobs, storedAppliedJobs, jobApplied);
+      setAppliedJobs(jobApplied)
     }
-  }, []);
+  }, [jobs]);
   return (
     <div className=" text-white">
       Applied Jobs
