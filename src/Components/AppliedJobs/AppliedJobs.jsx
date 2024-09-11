@@ -30,7 +30,7 @@ const AppliedJobs = () => {
               <p>{job.location}</p>
             </div>
           ))}
-        </div>):<div className="min-h-80 text-2xl flex justify-center items-center">No data</div>}
+        </div>):<div className="min-h-80 text-2xl flex justify-center items-center">No data Found!</div>}
 
     </div>
   );
