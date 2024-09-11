@@ -23,7 +23,7 @@ const AppliedJobs = () => {
           Applied Jobs : {appliedJobs?.length}
         </h1>
       </div>
-      
+
       <div>
         {appliedJobs.length > 0 ? (
           <div className="grid grid-cols-1 gap-4 py-20">
@@ -39,6 +39,14 @@ const AppliedJobs = () => {
                   <div className="flex flex-col justify-center items-start gap-4">
                     <h2 className="text-xl font-bold">{job.job_title}</h2>
                     <p className="text-lg">{job.company_name}</p>
+                    <div className="flex justify-start gap-6 items-center">
+                      <h5 className="text-lg font-bold text-blue-600 border-blue-600 bg-transparent border-2 rounded-xl py-2 px-3">
+                        {job.remote_or_onsite}
+                      </h5>
+                      <h5 className="text-xl font-bold text-blue-600 border-blue-600 bg-transparent border-2 rounded-xl py-2 px-3">
+                        {job.job_type}
+                      </h5>
+                    </div>
                     <div className="flex justify-start items-center gap-4">
                       <p className="flex justify-center items-center gap-2">
                         <FaLocationDot /> {job.location}
