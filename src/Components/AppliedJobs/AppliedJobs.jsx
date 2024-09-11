@@ -44,13 +44,13 @@ const AppliedJobs = () => {
             <summary className="btn m-1">Filter By <MdArrowDropDown /></summary>
             <ul className="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
               <li>
-                <a>All</a>
+                <a onClick={()=>handleJobsFilter('all')}>All</a>
               </li>
               <li>
-                <a>Remote</a>
+                <a onClick={()=>handleJobsFilter('remote')}>Remote</a>
               </li>
               <li>
-                <a>On site</a>
+                <a onClick={()=>handleJobsFilter('onsite')}>On site</a>
               </li>
             </ul>
           </details>
