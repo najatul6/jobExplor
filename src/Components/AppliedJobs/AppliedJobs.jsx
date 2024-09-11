@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { getStoredJobApplication } from "../../utility/localStorage";
+import { FaLocationDot } from "react-icons/fa6";
+import { LuCircleDollarSign } from "react-icons/lu";
 
 const AppliedJobs = () => {
   const jobs = useLoaderData();
@@ -25,13 +27,27 @@ const AppliedJobs = () => {
         <div className="grid grid-cols-3 gap-4 py-20">
           {appliedJobs.map((job) => (
             <div key={job.id} className="border-2 border-gray-400 p-4">
+              <div>
+                <img src={job.logo} alt={job.job_title} />
+              </div>
               <h2>{job.job_title}</h2>
               <p>{job.company_name}</p>
-              <p>{job.location}</p>
+              <div>
+                <p>
+                  <FaLocationDot /> {job.location}
+                </p>
+                <p>
+                  <LuCircleDollarSign /> {job.salary}
+                </p>
+              </div>
             </div>
           ))}
-        </div>):<div className="min-h-80 text-2xl flex justify-center items-center">No data Found!</div>}
-
+        </div>
+      ) : (
+        <div className="min-h-80 text-2xl flex justify-center items-center">
+          No data Found!
+        </div>
+      )}
     </div>
   );
 };
