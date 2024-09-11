@@ -8,6 +8,7 @@ import { MdArrowDropDown } from "react-icons/md";
 const AppliedJobs = () => {
   const jobs = useLoaderData();
   const [appliedJobs, setAppliedJobs] = useState([]);
+  const [displayJobs,setDisplayJobs] =useState([]);
   useEffect(() => {
     const storedAppliedJobs = getStoredJobApplication();
     if (jobs.length > 0) {
@@ -15,6 +16,7 @@ const AppliedJobs = () => {
         storedAppliedJobs.includes(job.id)
       );
       setAppliedJobs(jobApplied);
+      setDisplayJobs(jobApplied);
     }
   }, [jobs]);
   return (
@@ -45,9 +47,9 @@ const AppliedJobs = () => {
           </details>
         </div>
         <div>
-          {appliedJobs.length > 0 ? (
+          {displayJobs.length > 0 ? (
             <div className="grid grid-cols-1 gap-4 py-5">
-              {appliedJobs.map((job) => (
+              {displayJobs.map((job) => (
                 <div
                   key={job.id}
                   className="border-2 border-gray-400 px-4 py-5 rounded-xl flex justify-between items-center"
