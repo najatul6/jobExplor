@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useLoaderData } from "react-router-dom";
 import { getStoredJobApplication } from "../../utility/localStorage";
 
@@ -7,17 +7,18 @@ const AppliedJobs = () => {
   // const [filterdJob, setFilterdJob] = useState();
   useEffect(() => {
     const storedAppliedJobs = getStoredJobApplication();
-    if (storedAppliedJobs > 0) {
+    if (jobs.length > 0) {
       const jobApplied = jobs.filter((job) =>
-        storedAppliedJobs.include(job.id)
+        storedAppliedJobs.includes(job.id)
       );
-      console.log(jobApplied);
+
+      console.log(jobs, storedAppliedJobs, jobApplied);
     }
   }, []);
   return (
     <div className=" text-white">
       Applied Jobs
-      <h2>Helo world</h2>
+      <h2>Hello world</h2>
     </div>
   );
 };
