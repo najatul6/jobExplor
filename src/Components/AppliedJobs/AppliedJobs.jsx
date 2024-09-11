@@ -9,6 +9,14 @@ const AppliedJobs = () => {
   const jobs = useLoaderData();
   const [appliedJobs, setAppliedJobs] = useState([]);
   const [displayJobs,setDisplayJobs] =useState([]);
+
+  const handleJobsFilter=filter=>{
+    if(filter === 'all'){
+      setDisplayJobs(appliedJobs);
+    }else if(filter === 'remote'){
+      
+    }
+  }
   useEffect(() => {
     const storedAppliedJobs = getStoredJobApplication();
     if (jobs.length > 0) {
@@ -39,9 +47,6 @@ const AppliedJobs = () => {
               </li>
               <li>
                 <a>On site</a>
-              </li>
-              <li>
-                <a>Full time</a>
               </li>
             </ul>
           </details>
