@@ -16,7 +16,7 @@ const AppliedJobs = () => {
   }, [jobs]);
   return (
     <div className=" text-white">
-      Applied Jobs
+      Applied Jobs : {appliedJobs?.length}
       <h2>Hello world</h2>
     </div>
   );
