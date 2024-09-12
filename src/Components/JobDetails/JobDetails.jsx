@@ -8,6 +8,7 @@ import { ToastContainer, toast } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
 import { saveJobApplication } from "../../utility/localStorage";
+import { Helmet } from "react-helmet-async";
 
 const JobDetails = () => {
   const jobs = useLoaderData();
@@ -29,6 +30,9 @@ const JobDetails = () => {
   };
   return (
     <div className="text-white">
+      <Helmet>
+        <title>Job Details | {job_title}</title>
+      </Helmet>
       <div className="py-20 bg-base-200  text-white flex flex-col gap-4 justify-center items-center">
         <h1 className="text-4xl font-bold uppercase">Job Details</h1>
         <p>{job_title}</p>

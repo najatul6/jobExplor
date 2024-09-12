@@ -4,6 +4,7 @@ import { getStoredJobApplication } from "../../utility/localStorage";
 import { FaLocationDot } from "react-icons/fa6";
 import { LuCircleDollarSign } from "react-icons/lu";
 import { MdArrowDropDown } from "react-icons/md";
+import { Helmet } from "react-helmet-async";
 
 const AppliedJobs = () => {
   const jobs = useLoaderData();
@@ -33,6 +34,9 @@ const AppliedJobs = () => {
   }, [jobs]);
   return (
     <div className=" text-white">
+      <Helmet>
+        <title>Applied Jobs</title>
+      </Helmet>
       <div className="py-20 bg-base-200  text-white flex flex-col gap-4 justify-center items-center">
         <h1 className="text-4xl font-bold capitalize">
           Applied Jobs : {appliedJobs?.length}
