@@ -1,6 +1,11 @@
+import { Helmet } from "react-helmet-async";
+
 const Blog = () => {
   return (
     <div className="">
+      <Helmet>
+        <title>Blogs</title>
+      </Helmet>
       {/*  Blog Header  */}
       <header className="bg-dark-blue py-10">
         <div className="container mx-auto text-center text-white">
@@ -13,6 +18,7 @@ const Blog = () => {
 
       {/* Blog Posts  */}
       <section className="py-12 px-5">
+  
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="bg-white shadow-lg rounded-lg overflow-hidden">
             <img
