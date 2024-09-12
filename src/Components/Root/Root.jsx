@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
+import GoogleMap from "../GoogleMap/GoogleMap";
 
 const Root = () => {
   return (
@@ -9,6 +10,7 @@ const Root = () => {
         <Header />
         <Outlet />
       </div>
+      <GoogleMap />
       <Footer />
     </div>
   );
