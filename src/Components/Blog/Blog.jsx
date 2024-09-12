@@ -24,7 +24,7 @@ const Blog = () => {
             <img
               src="https://media.licdn.com/dms/image/D5612AQFy_NJo_nk1qA/article-cover_image-shrink_720_1280/0/1709749983417?e=2147483647&v=beta&t=fUF4HhVLGgBqtnw98fuuDYPctIGiPMyHhLwRVRGGVCY"
               alt="Resume Writing"
-              className="w-full"
+              className="w-full h-[250px]"
             />
             <div className="p-6">
               <h2 className="text-xl font-bold text-gray-800 mb-2">
@@ -44,7 +44,7 @@ const Blog = () => {
             <img
               src="https://gsb.hse.ru/pubs/share/direct/408305373.png"
               alt="Interview Preparation"
-              className="w-full"
+              className="w-full h-[250px]"
             />
             <div className="p-6">
               <h2 className="text-xl font-bold text-gray-800 mb-2">
@@ -64,7 +64,7 @@ const Blog = () => {
             <img
               src="https://www.thenewellgroup.com/wp-content/uploads/2023/08/Connection-cover-1024x683.png"
               alt="Networking"
-              className="w-full"
+              className="w-full h-[250px]"
             />
             <div className="p-6">
               <h2 className="text-xl font-bold text-gray-800 mb-2">
@@ -84,7 +84,7 @@ const Blog = () => {
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAbMmDhm2AqIWBmGKP7Y_nsdBnWUgxgPi_Tg&s"
               alt="Salary Negotiation"
-              className="w-full"
+              className="w-full h-[250px]"
             />
             <div className="p-6">
               <h2 className="text-xl font-bold text-gray-800 mb-2">
@@ -104,7 +104,7 @@ const Blog = () => {
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgGqgcKhCYE4kz6iIPn3jRKr2qVS3Pfe1OCQ&s"
               alt="Career Change"
-              className="w-full"
+              className="w-full h-[250px]"
             />
             <div className="p-6">
               <h2 className="text-xl font-bold text-gray-800 mb-2">
@@ -124,7 +124,7 @@ const Blog = () => {
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPWQRQ0-RG1SKMPU9GEOaLwhjnRAsW_E-Z_w&s"
               alt="Remote Jobs"
-              className="w-full"
+              className="w-full h-[250px]"
             />
             <div className="p-6">
               <h2 className="text-xl font-bold text-gray-800 mb-2">
@@ -144,7 +144,7 @@ const Blog = () => {
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQtpYAFlrzqesAaqQyu6sgo1RGb99uZqUk8g&s"
               alt="Job Market Trends"
-              className="w-full"
+              className="w-full h-[250px]"
             />
             <div className="p-6">
               <h2 className="text-xl font-bold text-gray-800 mb-2">
@@ -164,7 +164,7 @@ const Blog = () => {
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUF3kYHpNfMGyGI_XeTK_CDSbgfxnKObdPJNFWQVCCvIhMYWpaNleLuB_BYjBmN3gyJJ0&usqp=CAU"
               alt="Interview Follow-up"
-              className="w-full"
+              className="w-full h-[250px]"
             />
             <div className="p-6">
               <h2 className="text-xl font-bold text-gray-800 mb-2">
@@ -184,7 +184,7 @@ const Blog = () => {
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqXERi3UVmbega8Ku9vpB32VCJUI-suqasMg&s"
               alt="Building a Personal Brand"
-              className="w-full"
+              className="w-full h-[250px]"
             />
             <div className="p-6">
               <h2 className="text-xl font-bold text-gray-800 mb-2">
@@ -204,7 +204,7 @@ const Blog = () => {
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWZkg_EOVxxPubE7MGM0WsYEuIYYrxj-DzPQ&s"
               alt="Cover Letter Tips"
-              className="w-full"
+              className="w-full h-[250px]"
             />
             <div className="p-6">
               <h2 className="text-xl font-bold text-gray-800 mb-2">
