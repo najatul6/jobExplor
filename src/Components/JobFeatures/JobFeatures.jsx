@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
 import SectionHeader from "../Shared/SectionHeader/SectionHeader";
 import JobsCard from "./JobsCard";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import { Link } from "react-router-dom";
 
 const JobFeatures = () => {
   const [jobs, setJobs] = useState([]);
+  const [error,setError] = useState();
 
   useEffect(() => {
     fetch("/api/v1/job/search", {
@@ -26,7 +25,6 @@ const JobFeatures = () => {
       })
       .catch((error) => {
         // Capture error message for display
-        toast(error.message);
         console.error("Error:", error);
       });
   }, []);
@@ -39,7 +37,6 @@ const JobFeatures = () => {
           "Explore thousands of job opportunities with all the information you need. It's your future."
         }
       />
-      <ToastContainer />
 
       <div className="grid grid-cols-1 lg:grid-cols-2 duration-300 gap-6">
         {jobs?.slice(0, 4).map((job) => (
