@@ -40,7 +40,7 @@ const JobFeatures = () => {
       />
       {error ? (
         <div className="flex justify-center items-center py-10 px-10">
-          {error}
+         No Data Found
         </div>
       ) : (
         <div className="grid grid-cols-1 lg:grid-cols-2 duration-300 gap-6">
