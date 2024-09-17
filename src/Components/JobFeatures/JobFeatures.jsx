@@ -3,10 +3,10 @@ import SectionHeader from "../Shared/SectionHeader/SectionHeader";
 import JobsCard from "./JobsCard";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Link } from "react-router-dom";
 
 const JobFeatures = () => {
   const [jobs, setJobs] = useState([]);
-  const [isShow, setIsShow] = useState(false);
 
   useEffect(() => {
     fetch("/api/v1/job/search", {
@@ -47,9 +47,11 @@ const JobFeatures = () => {
         ))}
       </div>
       <div className="py-10 flex justify-center items-center">
-        <button className="btn bg-dark-blue text-white hover:bg-dark-blue duration-300">
-          Show All Jobs
-        </button>
+        <Link>
+          <button className="btn bg-dark-blue text-white hover:bg-dark-blue duration-300">
+            Show All Jobs
+          </button>
+        </Link>
       </div>
     </div>
   );
