@@ -22,7 +22,6 @@ const JobFeatures = () => {
       .then((response) => response.json())
       .then((data) => {
         setJobs(data.hits);
-        console.log(data.hits);
       })
       .catch((error) => { // Capture error message for display
         toast(error.message)
@@ -40,7 +39,6 @@ const JobFeatures = () => {
       />
        <ToastContainer />
 
-      {/* You can uncomment the following section once jobs are being correctly fetched */}
       <div className="grid grid-cols-1 lg:grid-cols-2 duration-300 gap-6">
         {isShow
           ? jobs?.map((job) => <JobsCard key={job.id} job={job} />)
