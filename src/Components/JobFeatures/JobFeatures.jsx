@@ -9,10 +9,9 @@ const JobFeatures = () => {
 
   useEffect(() => {
     fetch("/api/v1/job/search", {
-      // Proxying via /api
       method: "POST",
       headers: {
-        apikey: import.meta.env.VITE_JOB_API_KEY, // Correct way to access the environment variable
+        apikey: import.meta.env.VITE_JOB_API_KEY, 
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
@@ -24,7 +23,6 @@ const JobFeatures = () => {
         setJobs(data.hits);
       })
       .catch((error) => {
-        // Capture error message for display
         setError(error.message);
         console.error("Error:", error);
       });
