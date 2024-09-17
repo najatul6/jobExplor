@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import JobsCard from "../JobFeatures/JobsCard";
 
 const Statistics = () => {
@@ -35,7 +33,7 @@ const Statistics = () => {
       <Helmet>
         <title>Statistics</title>
       </Helmet>
-        {error?<div className="flex justify-center items-center py-10 px-10">No Data Found</div>:<div className="grid grid-cols-1 lg:grid-cols-2 duration-300 gap-6">
+        {error?<div className="flex justify-center items-center py-10 px-10">{error}</div>:<div className="grid grid-cols-1 lg:grid-cols-2 duration-300 gap-6">
       {isShow
           ? jobs?.map((job,idx) => <JobsCard key={idx} job={job} />)
           : jobs
@@ -43,7 +41,7 @@ const Statistics = () => {
               .map((job,index) => <JobsCard key={index} job={job} />)}
       </div>}
       
-      <div className="py-10 flex justify-center items-center">
+      <div className={`py-10 flex justify-center items-center ${error && "hidden"}`}>
         <button
           onClick={() => setIsShow(!isShow)}
           className="btn bg-dark-blue text-white hover:bg-dark-blue duration-300"
