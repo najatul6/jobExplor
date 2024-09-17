@@ -47,7 +47,7 @@ const JobFeatures = () => {
         ))}
       </div>
       <div className="py-10 flex justify-center items-center">
-        <Link>
+        <Link to='/statistics'>
           <button className="btn bg-dark-blue text-white hover:bg-dark-blue duration-300">
             Show All Jobs
           </button>
