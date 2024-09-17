@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async"
+import { Helmet } from "react-helmet-async";
 
 const Statistics = () => {
   return (
@@ -6,8 +6,9 @@ const Statistics = () => {
       <Helmet>
         <title>Statistics</title>
       </Helmet>
-      Statistics</div>
-  )
-}
+      Statistics
+    </div>
+  );
+};
 
-export default Statistics
+export default Statistics;
