@@ -24,7 +24,6 @@ const JobFeatures = () => {
       })
       .catch((error) => {
         setError(error.message);
-        console.error("Error:", error);
       });
   }, []);
 
