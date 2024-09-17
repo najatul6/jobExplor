@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import SectionHeader from "../Shared/SectionHeader/SectionHeader";
 import JobsCard from "./JobsCard";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const JobFeatures = () => {
   const [jobs, setJobs] = useState([]);
   const [isShow, setIsShow] = useState(false);
-  const [error, setError] = useState(null);
 
   useEffect(() => {
     fetch("/api/v1/job/search", {  // Proxying via /api
@@ -23,8 +24,8 @@ const JobFeatures = () => {
         setJobs(data.hits);
         console.log(data.hits);
       })
-      .catch((error) => {
-        setError(error.message); // Capture error message for display
+      .catch((error) => { // Capture error message for display
+        toast(error.message)
         console.error("Error:", error);
       });
   }, []);
@@ -37,7 +38,7 @@ const JobFeatures = () => {
           "Explore thousands of job opportunities with all the information you need. It's your future."
         }
       />
-      
+       <ToastContainer />
 
       {/* You can uncomment the following section once jobs are being correctly fetched */}
       <div className="grid grid-cols-1 lg:grid-cols-2 duration-300 gap-6">
