@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import JobsCard from "../JobFeatures/JobsCard";
 
 const Statistics = () => {
@@ -37,8 +37,10 @@ const Statistics = () => {
       <ToastContainer />
       <div className="grid grid-cols-1 lg:grid-cols-2 duration-300 gap-6">
         {isShow
-          ? jobs?.map((job) => <JobsCard key={job.id} job={job} />)
-          : jobs?.slice(0, 10).map((job) => <JobsCard key={job.id} job={job} />)}
+          ? jobs?.map((job,index) => <JobsCard key={job.index} job={job} />)
+          : jobs
+              ?.slice(0, 10)
+              .map((job) => <JobsCard key={job.id} job={job} />)}
       </div>
       <div className="py-10 flex justify-center items-center">
         <button
