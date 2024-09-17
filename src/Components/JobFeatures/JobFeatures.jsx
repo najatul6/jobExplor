@@ -5,7 +5,7 @@ import JobsCard from "./JobsCard";
 const JobFeatures = () => {
   const [jobs, setJobs] = useState([]);
   const [isShow, setIsShow] = useState(false);
-  
+  const [error, setError] = useState([]);
   useEffect(() => {
     // fetch("jobs.json")
     //   .then((res) => res.json())
@@ -14,7 +14,7 @@ const JobFeatures = () => {
       fetch('https://api.apijobs.dev/v1/job/search', {
         method: 'POST',
         headers: {
-          'apikey': 'f441ba54e8f4ee09eb722ac8a30ba21b935c4a76804f8cbf7db24605f9f77c95',
+          'apikey': '',
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
