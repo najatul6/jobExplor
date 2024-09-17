@@ -37,10 +37,10 @@ const Statistics = () => {
       <ToastContainer />
       <div className="grid grid-cols-1 lg:grid-cols-2 duration-300 gap-6">
         {isShow
-          ? jobs?.map((job,index) => <JobsCard key={job.index} job={job} />)
+          ? jobs?.map((job,idx) => <JobsCard key={idx} job={job} />)
           : jobs
               ?.slice(0, 10)
-              .map((job) => <JobsCard key={job.id} job={job} />)}
+              .map((job,index) => <JobsCard key={index} job={job} />)}
       </div>
       <div className="py-10 flex justify-center items-center">
         <button
