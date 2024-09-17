@@ -14,7 +14,7 @@ const JobFeatures = () => {
       fetch('https://api.apijobs.dev/v1/job/search', {
         method: 'POST',
         headers: {
-          'apikey': '',
+          'apikey': import.meta.env.VITE_JOB_API_KEY,
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
