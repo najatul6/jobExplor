@@ -7,6 +7,7 @@ import JobsCard from "../JobFeatures/JobsCard";
 const Statistics = () => {
   const [jobs, setJobs] = useState([]);
   const [isShow, setIsShow] = useState(false);
+  const [error,setError] = useState();
   useEffect(() => {
     fetch("/api/v1/job/search", {
       // Proxying via /api
@@ -25,7 +26,7 @@ const Statistics = () => {
       })
       .catch((error) => {
         // Capture error message for display
-        toast(error.message);
+        setError(error.message);
         console.error("Error:", error);
       });
   }, []);
@@ -34,14 +35,14 @@ const Statistics = () => {
       <Helmet>
         <title>Statistics</title>
       </Helmet>
-      <ToastContainer />
-      <div className="grid grid-cols-1 lg:grid-cols-2 duration-300 gap-6">
-        {isShow
+        {error?<div className="flex justify-center items-center py-10 px-10">No Data Found</div>:<div className="grid grid-cols-1 lg:grid-cols-2 duration-300 gap-6">
+      {isShow
           ? jobs?.map((job,idx) => <JobsCard key={idx} job={job} />)
           : jobs
               ?.slice(0, 10)
               .map((job,index) => <JobsCard key={index} job={job} />)}
-      </div>
+      </div>}
+      
       <div className="py-10 flex justify-center items-center">
         <button
           onClick={() => setIsShow(!isShow)}
