@@ -22,7 +22,6 @@ const Statistics = () => {
         setJobs(data.hits);
       })
       .catch((error) => {
-        // Capture error message for display
         setError(error.message);
         console.error("Error:", error);
       });
