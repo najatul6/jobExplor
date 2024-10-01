@@ -16,14 +16,14 @@ const Faq = () => {
                 <div className="lg:w-2/5 flex mt-10 ml-2 lg:ml-0 lg:mt-0 lg:justify-end">
                   <div className="pt-2 relative  text-gray-600">
                     <input
-                      className="focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
+                      className="focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bg-gray-300 h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
                       type="search"
                       name="search"
                       placeholder="Search"
                     />
                     <button
                       type="submit"
-                      className="focus:ring-2 focus:ring-offset-2 text-gray-600 focus:text-indigo-700 focus:rounded-full  focus:bg-gray-100 focus:ring-indigo-700 bg-white focus:outline-none absolute right-0 top-0 mt-5 mr-4"
+                      className="focus:ring-2 focus:ring-offset-2 text-gray-600 focus:text-indigo-700 focus:rounded-full  focus:bg-gray-100 focus:ring-indigo-700 bg-gray-300 focus:outline-none absolute right-0 top-0 mt-5 mr-4"
                     >
                       <svg
                         className=" h-4 w-4 fill-current"
@@ -49,7 +49,7 @@ const Faq = () => {
             <div className="px-6 xl:px-0">
               <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 pb-6 gap-8">
                 <div role="cell" className="bg-base-100">
-                  <div className="bg-white p-5 rounded-md relative h-full w-full">
+                  <div className="bg-gray-300 p-5 rounded-md relative h-full w-full">
                     {/* class="absolute inset-0 object-center object-cover h-full w-full"  */}
                     <span>
                       <img
@@ -179,7 +179,7 @@ const Faq = () => {
                   </div>
                 </div>
                 <div role="cell" className="bg-base-100">
-                  <div className="bg-white p-5 rounded-md relative h-full w-full">
+                  <div className="bg-gray-300 p-5 rounded-md relative h-full w-full">
                     {/* class="absolute inset-0 object-center object-cover h-full w-full"  */}
                     <span>
                       <img
@@ -333,7 +333,7 @@ const Faq = () => {
                   </div>
                 </div>
                 <div role="cell" className="bg-base-100">
-                  <div className="bg-white p-5 rounded-md relative h-full w-full">
+                  <div className="bg-gray-300 p-5 rounded-md relative h-full w-full">
                     {/* class="absolute inset-0 object-center object-cover h-full w-full"  */}
                     <span>
                       <img
@@ -465,11 +465,11 @@ const Faq = () => {
                   </div>
                 </div>
                 <div role="cell" className="bg-base-100">
-                  <div className="bg-white p-5 rounded-md  h-full relative w-full">
+                  <div className="bg-gray-300 p-5 rounded-md  h-full relative w-full">
                     {/* class="absolute inset-0 object-center object-cover h-full w-full"  */}
                     <span>
                       <img
-                        className="bg-gray-200 p-2 mb-5 rounded-full"
+                        className="bg-base-200 p-2 mb-5 rounded-full"
                         src="https://i.ibb.co/rG4r6NJ/notifications-1.png"
                         alt="home-1"
                       />
@@ -597,7 +597,7 @@ const Faq = () => {
                   </div>
                 </div>
                 <div role="cell" className="bg-gray-100">
-                  <div className="relative bg-white p-5 rounded-md h-full w-full">
+                  <div className="relative bg-gray-300 p-5 rounded-md h-full w-full">
                     {/* class="absolute inset-0 object-center object-cover h-full w-full"  */}
                     <span>
                       <img
@@ -706,7 +706,7 @@ const Faq = () => {
                   </div>
                 </div>
                 <div role="cell" className="bg-gray-100">
-                  <div className="bg-white p-5 rounded-md relative h-full  w-full">
+                  <div className="bg-gray-300 p-5 rounded-md relative h-full  w-full">
                     {/* class="absolute inset-0 object-center object-cover h-full w-full"  */}
                     <span>
                       <img
