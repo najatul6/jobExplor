@@ -19,7 +19,7 @@ const Statistics = () => {
     })
       .then((response) => response.json())
       .then((data) => {
-        setJobs(data.hits);
+        setJobs(data?.hits);
       })
       .catch((error) => {
         setError(error.message);
