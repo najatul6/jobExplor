@@ -3,6 +3,7 @@ import Banner from "../Banner/Banner";
 import Category from "../Category/Category";
 import JobFeatures from "../JobFeatures/JobFeatures";
 import Faq from "../Faq/Faq";
+import Stats from "../Stats/Stats";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Category />
       <JobFeatures />
       <Faq/>
+      <Stats/>
     </div>
   );
 };
