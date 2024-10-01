@@ -706,7 +706,7 @@ const Faq = () => {
                   </div>
                 </div>
                 <div role="cell" className="bg-gray-100">
-                  <div className="relative bg-white p-5 rounded-md relative h-full  w-full">
+                  <div className="bg-white p-5 rounded-md relative h-full  w-full">
                     {/* class="absolute inset-0 object-center object-cover h-full w-full"  */}
                     <span>
                       <img
