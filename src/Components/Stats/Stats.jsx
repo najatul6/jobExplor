@@ -14,7 +14,7 @@ const Stats = () => {
                 <p className="text-3xl font-semibold text-gray-800">20K+</p>
                 <p className="text-base leading-4 xl:mt-4 mt-2 text-gray-600">Recently Property Listed</p>
             </div>
-            <div className="shadow-lg xl:p-6 p-4 w-48 sm:w-auto w-full bg-white sm:absolute relative z-20 sm:mt-0 mt-4 xl:mt-80 sm:mt-56 xl:-ml-0 sm:-ml-12">
+            <div className="shadow-lg xl:p-6 p-4 sm:w-auto w-full bg-white sm:absolute relative z-20 sm:mt-0 mt-4 xl:mt-80 sm:mt-56 xl:-ml-0 sm:-ml-12">
                 <p className="text-3xl font-semibold text-gray-800">8K+</p>
                 <p className="text-base leading-4 xl:mt-4 mt-2 text-gray-600">Active Listening</p>
             </div>
